@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.linec.HelloController">
+   <children>
+      <HBox alignment="CENTER_LEFT" spacing="5.0">
+         <children>
+            <CheckBox fx:id="server" mnemonicParsing="false" onAction="#onClickCheckBox" text="server:" />
+            <TextField fx:id="tfIP" alignment="CENTER" prefHeight="25.0" prefWidth="90.0" text="10.201.2.19" />
+            <TextField fx:id="tfPORT" alignment="CENTER" layoutX="83.0" layoutY="10.0" prefHeight="25.0" prefWidth="40.0" text="678" />
+            <Button fx:id="btElker" disable="true" mnemonicParsing="false" onAction="#onClickElker" prefWidth="60.0" text="Elkér" />
+            <Button fx:id="btNullaz" disable="true" layoutX="381.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClickNullaz" prefWidth="60.0" text="Nulláz" />
+            <Label fx:id="lbSorszam" text="0" />
+         </children>
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Pane fx:id="pane" prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: orange;">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin></Pane>
+   </children>
+</VBox>
